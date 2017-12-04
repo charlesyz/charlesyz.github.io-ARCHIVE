@@ -8,8 +8,8 @@ title: Quadratic Equation Calculator
     <p>
     Fill in the variables in the equation below, and solve the quadratic of your dreams!
     </p>
-    <form id="oForm"> <input type="text" name="x" size=1> \( = {-b \pm \sqrt{b^2-4ac} \over 2a}.\)
-        <br><br>  a = <input type="text" name="a" size="2"> b = <input type="text" name="b" size="2"> c = <input type="text" name="c" size="2"></form>
+    <p><form id="oForm"> <input type="text" name="x" size=1> \( = {-b \pm \sqrt{b^2-4ac} \over 2a}.\)
+        <br><br>  a = <input type="text" name="a" size="2"> b = <input type="text" name="b" size="2"> c = <input type="text" name="c" size="2"></form></p>
     <br>
     <button onclick="calc()"> Calculate! </button> <br> <br>
 </div>
@@ -69,7 +69,7 @@ title: Quadratic Equation Calculator
 
     function isValid(x, a, b, c){
         //alert("x = " + x + " a = " + a + " b = " + b + " c = " + c);
-        if (x != 'x'){ return 0;}
+        if (x != 'x' && x != 'X'){ return 0;}
         if (isNaN(a) || isNaN(b) || isNaN(c)){return 0;}
         
         return 1;
