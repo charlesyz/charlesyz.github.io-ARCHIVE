@@ -1,0 +1,79 @@
+---
+layout: default
+title: Quadratic Equation Calculator
+---
+
+<div class="blurb" id = "quadratic">
+    <h1>Quadratic Equation Calculator</h1>
+    <p>
+    Fill in the variables in the equation below, and solve the quadratic of your dreams!
+    </p>
+    <form id="oForm"> <input type="text" name="x" size=1> \( = {-b \pm \sqrt{b^2-4ac} \over 2a}.\)
+        <br><br>  a = <input type="text" name="a" size="2"> b = <input type="text" name="b" size="2"> c = <input type="text" name="c" size="2"></form>
+    <br>
+    <button onclick="calc()"> Calculate! </button> <br> <br>
+</div>
+
+<style>
+    .galert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
+    .balert {
+        padding: 15px;
+        border: 1px solid #994646;
+        border-radius: 4px;
+        color: #8c0b0b;
+        background-color: #ea7c7c;
+    }
+</style>
+
+
+<script type="text/javascript">
+    //'use strict';
+    var elem = document.getElementById('quadratic');
+    var errorDiv = document.createElement('div');
+    errorDiv.className = "balert alert-failure";
+
+    var successDiv = document.createElement('div')
+    successDiv.className = "galert alert-success";
+
+    var oForm = document.getElementById('oForm')
+    function calc(){
+        errorDiv.remove();
+        successDiv.remove();
+        var x = oForm.elements["x"].value;
+        var a = oForm.elements["a"].value;
+        var b = oForm.elements["b"].value;
+        var c = oForm.elements["c"].value;
+        if (!isValid(x, a, b, c)){
+            errorDiv.innerHTML = "<strong>ERROR:</strong> Invalid Input";
+            elem.appendChild(errorDiv);
+            return 0;
+        }
+        let discriminant = b ** 2 - (4 * a * c);
+        if (discriminant < 0){
+            errorDiv.innerHTML = "<strong>ERROR:</strong> No Solutions";
+            elem.appendChild(errorDiv);
+            return 0;
+        }
+        
+        let x1 = (-1 * b + (discriminant ** 0.5)) /(2 * a); // quadratic equation solution 1
+        let x2 = (-1 * b - (discriminant ** 0.5))/(2 * a); // solution 2
+        successDiv.innerHTML = "<strong>Success!</strong> Solutions are: x1 = " + x1 + ", x2 = " + x2;
+        elem.appendChild(successDiv);
+    }
+
+    function isValid(x, a, b, c){
+        //alert("x = " + x + " a = " + a + " b = " + b + " c = " + c);
+        if (x != 'x'){ return 0;}
+        if (isNaN(a) || isNaN(b) || isNaN(c)){return 0;}
+        
+        return 1;
+    }
+
+</script>
+	
