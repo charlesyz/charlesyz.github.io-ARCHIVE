@@ -84,6 +84,15 @@
             <h2>Projects</h2>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
+              <div class="card w-100">
+                  <img class="card-img" src="/images/article_generator_icon.png" alt="Card image">
+                  <div class="card-title p-3">
+                      <h5>Article Generator IOS App</h5>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#article-generator"> More Info </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 p-3">
             <div class="card w-100">
               <img class="card-img" src="/images/tetris_neural_net_icon.png" alt="Card image">
               <div class="card-title p-3">
@@ -142,6 +151,49 @@
     </section>
 
     <!-- Modals -->
+    <div class="modal fade" id="article-generator" tabindex="-1" role="dialog" aria-labelledby="article-generator" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tetris-title">Article Generator IOS App</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-11 col-md-6 p-4 mx-auto">
+                        <img class="card-img" src="/images/article_generator.jpeg" alt="Card image">
+                            </div>
+                    <div class="col">
+                        <p class="lead">  Article-generator is an IOS app that allows users to harness the power of neural networks to generate news articles in the following topics: </p>
+                        <ul class="lead">
+                            <li> Space </li>
+                            <li> Medicine </li>
+                            <li> Motorcycles </li>
+                            <li> Electronics </li>
+                            <li> Politics about the Middle east </li>
+                            <li> For Sale ads </li>
+                        </ul>
+                        <p class="lead">
+                        The Neural Network is a Long Short-Term Memory (LSTM) recurrent neural network. LSTM models "remember" the previous inputs in order to better predict the next output.</p>
+                        <p class="lead">
+                        In this case, the neural network has 25 inputs (the 25 previous words), two hidden LSTM layers of 200 nodes, then one output layer with size equal to the number of unique words in the training data (length of the tokenizer).</p>
+                        <p class="lead">
+                        I used Keras and Tensorflow to train the model. It uses a Softmax activation function and the Adam optimization algorithm (A version of stochastic gradient descent).</p>
+                        <ul>
+                            <li><a href="" class="lead">Download it on the IOS App Store! (PENDING APPROVAL)</a></li>
+                            <li><a href="https://github.com/charlesyz/article-generator/" class="lead">IOS app source code</a></li>
+                            <li><a href="https://github.com/charlesyz/word-rnn/" class="lead">Neural Network source code</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="modal fade" id="tetris-neural-net" tabindex="-1" role="dialog" aria-labelledby="tetris-neural-net" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -186,10 +238,10 @@
             <div class="col">
               <p class="lead">  EzJigsaw is an interactive game where users can create dynamic and customizable jigsaw puzzles using their own photos.
               <ul>
-                  <li><a href="https://itunes.apple.com/us/app/ez-jigsaw-ad-free/id1290545403?mt=8" class="lead">Download the app now!</a></li>
+                  <li><a href="" class="lead">Download the app now! (TEMPORARILY UNAVAILABLE)</a></li>  <!––https://itunes.apple.com/us/app/ez-jigsaw-ad-free/id1290545403?mt=8 -->
                   <li><a href="https://github.com/charlesyz/Ez-Jigsaw" class="lead">Source Code and more documentation is on my Github</a></li>
               </ul>
-              <p> EzJigsaw was my second app and a big milestone for me as a developing programmer. After independently learning the Swift programming language in two weeks,  I spent four months in the summer of grade 11 creating the app. After a lot of hard work and determination, my efforts were rewarded. On October the third, 2017, EzJigsaw was released onto the IOS App store. Over 200 people downloaded it on the first day. Since then, users from Russia to Japan have download it to enjoy fun and relaxing jigsaw puzzles. </p>
+              <p class="lead"> EzJigsaw was my second app and a big milestone for me as a developing programmer. After independently learning the Swift programming language in two weeks,  I spent four months in the summer of grade 11 creating the app. After a lot of hard work and determination, my efforts were rewarded. On October the third, 2017, EzJigsaw was released onto the IOS App store. Over 200 people downloaded it on the first day. Since then, users from Russia to Japan have download it to enjoy fun and relaxing jigsaw puzzles. </p>
             </div>
           </div>
           <div class="modal-footer">
