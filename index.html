@@ -387,5 +387,32 @@
     <script src="js/scrolling-nav.js"></script>
 
   </body>
+  
+  <!-- Javascript to open modal popups on link -->
+    <script>
+$(document).ready(function() {
+    if(window.location.href.indexOf('#article-generator') != -1) {
+      $('#article-generator').modal('show');
+    }
+    if(window.location.href.indexOf('#tetris-neural-net') != -1) {
+      $('#tetris-neural-net').modal('show');
+    }
+    if(window.location.href.indexOf('#ez-jigsaw') != -1) {
+      $('#ez-jigsaw').modal('show');
+    }
+    if(window.location.href.indexOf('#maze-bot') != -1) {
+      $('#maze-bot').modal('show');
+    }
+    if(window.location.href.indexOf('#tapemeasure') != -1) {
+      $('#tapemeasure').modal('show');
+    }
+    if(window.location.href.indexOf('#math') != -1) {
+      $('#math').modal('show');
+    }
+    if(window.location.href.indexOf('#deca') != -1) {
+      $('#deca').modal('show');
+    }
+  });
+  </script>
 
 </html>
