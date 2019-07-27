@@ -33,6 +33,9 @@
               <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="/pdfs/resume.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
@@ -48,9 +51,11 @@
         <h1 class="master-head pb-5">Hi! I'm Charles.</h1>
         <div class="container">
           <div class="pt-2 mr-lg-1 row d-inline-flex my-5 justify-content-center align-items-center row-lightgray">
-            <!--<div class="pt-3 px-3 row-lightgray">-->
               <div class="pl-sm-3 ml-md-auto align-self-center" style="width: 250px !important;">
                 <img class="w-100" src="/images/university_of_waterloo_logo-500x151.png" alt="Card image">
+              </div>
+              <div class="px-3 ml-sm-4 mx-0 pb-2 pb-sm-3 align-self-center" style="width: 200px !important;">
+                <img class="w-100" src="/images/cisco.png" alt="Card image">
               </div>
               <div class="px-3 ml-sm-4 mx-0 pb-2 pb-sm-3 align-self-center" style="width: 200px !important;">
                 <img class="w-100" src="/images/Ciena_logo.png" alt="Card image">
@@ -65,7 +70,9 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <h2>Hi!</h2>
-              <p class="lead"> I am an undergraduate student currently studying Computer Science at the <a href="https://uwaterloo.ca/">University of Waterloo</a>. My favourite hobbies are math contests, programming, volleyball, and snowboarding.</p>
+              <p class="lead"> I am an undergraduate student currently studying Computer Science at the <a href="https://uwaterloo.ca/">University of Waterloo</a> </p>
+              <p class="lead">   I'm fascinated by the ways that embedded real time software impact our lives. In the summer of 2019, I worked at Cisco where I gained experience with embedded systems and automated testing in networking and telecommunications. I'm currently a Tech Lead in Watonomous, a team of students dedicated to converting a Chevy Bolt into a self driving cars.
+              <p class="lead"> My dream is to contribute to the future of self driving cars, combining software and hardware to make products that revolutionize the way we view the world. </p>
               <p class="lead"> If you want to get in contact with me, you can <a href="mailto:hello@charleszhang.ca">email me</a> here.
                 <ul>
                   <li><a href="https://github.com/charlesyz" class="lead"> My Github Repository</a></li>
@@ -84,9 +91,18 @@
             <h2>Projects</h2>
           </div>
           <div class="col-md-6 col-lg-4 p-3">
+            <div class="card w-100">
+                <img class="card-img" src="/images/wato-logo.png" alt="Card image">
+                <div class="card-title p-3">
+                    <h5>Watonomous</h5>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wato"> More Info </button>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 p-3">
               <div class="card w-100">
                   <img class="card-img" src="/images/article_generator_icon.png" alt="Card image">
-                  <div class="card-title p-3">
+                  <div class="card-title p-3"> 
                       <h5>Article Generator IOS App</h5>
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#article-generator"> More Info </button>
                   </div>
@@ -94,14 +110,14 @@
           </div>
           <div class="col-md-6 col-lg-4 p-3">
             <div class="card w-100">
-              <img class="card-img" src="/images/tetris_neural_net_icon.png" alt="Card image">
+              <img class="card-img" src="/images/tetris-gif-best.gif"" alt="Card image">
               <div class="card-title p-3">
                 <h5>Tetris Neural Net</h5>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tetris-neural-net"> More Info </button>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 p-3">
+          <div class="col-md-6 col-lg-4 p-3"> 
             <div class="card w-100">
               <img class="card-img" src="/images/ez-jigsaw-icon.png" alt="Card image">
               <div class="card-title p-3">
@@ -128,6 +144,7 @@
               </div>
             </div>
           </div>
+<!--
           <div class="col-md-6 col-lg-4 p-3">
             <div class="card w-100">
               <img class="card-img" src="/images/DECA.png" alt="Card image">
@@ -146,11 +163,47 @@
               </div>
             </div>
           </div>
+-->
         </div>
       </div>
     </section>
 
     <!-- Modals -->
+    <div class="modal fade" id="wato" tabindex="-1" role="dialog" aria-labelledby="wato" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wato-title">Watonomous</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-11 col-md-6 p-4 mx-auto">
+                        <img class="card-img" src="/images/watocar.png" alt="Card image">
+                            </div>
+                    <div class="col">
+                        <p class="lead"> Watonomous is a student design team of over 100 students working to convert a Chevy Bolt into a self driving car </p>
+                        <p class="lead"> I am currently a Tech Lead for the Path Planning team. I'm focusing on building an expandable architecture and robust algorithms for Occupiable Objects. Occupiable Objects are any obstacle that require special treatment, such as pedestrians, stop lights, and traffic signs. </p>
+                        <p class="lead"> In Winter 2019, I worked on the Costmap subteam, building a graphics API responsible for efficiently drawing obstacles onto a matrix representation of the car's environment. </p>
+                        <ul>
+                            <li><a href="https://watonomous.ca/#/" class="lead">Find more info on the Wato website</a></li>
+                            <li><a href="https://watonomous.ca/#/apply" class="lead">  APPLY NOW! Applications close July 30th</a></li>
+                        </ul>
+
+                        <div class="row justify-content-center">
+                        	<img src="/icons/c++.png" class="col-2 w-100 h-100 my-auto "> 
+                            <img src="/icons/ros_logo.png" class="col-4 w-100 h-100 my-auto"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="article-generator" tabindex="-1" role="dialog" aria-labelledby="article-generator" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -161,30 +214,28 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-11 col-md-6 p-4 mx-auto">
+                    <div class="col-11 col-md-4 p-4 mx-auto">
                         <img class="card-img" src="/images/article_generator.jpeg" alt="Card image">
                             </div>
                     <div class="col">
-                        <p class="lead">  Article-generator is an IOS app that allows users to harness the power of neural networks to generate news articles in the following topics: </p>
-                        <ul class="lead">
-                            <li> Space </li>
-                            <li> Medicine </li>
-                            <li> Motorcycles </li>
-                            <li> Electronics </li>
-                            <li> Politics about the Middle east </li>
-                            <li> For Sale ads </li>
-                        </ul>
-                        <p class="lead">
-                        The Neural Network is a Long Short-Term Memory (LSTM) recurrent neural network. LSTM models "remember" the previous inputs in order to better predict the next output.</p>
-                        <p class="lead">
-                        In this case, the neural network has 25 inputs (the 25 previous words), two hidden LSTM layers of 200 nodes, then one output layer with size equal to the number of unique words in the training data (length of the tokenizer).</p>
-                        <p class="lead">
-                        I used Keras and Tensorflow to train the model. It uses a Softmax activation function and the Adam optimization algorithm (A version of stochastic gradient descent).</p>
+                        <p class="lead">  Article-generator is an IOS app that generates style-mimicking text similar to news articles about space, medicine, and electronics. The app uses a Long Short Term Memory(LSTM) Recurrent Neural Network, with a Softmax activation and the ADAM optimization algorithm </p>
+                        <p class="lead"> Trained the model in Python using Keras and Tensorflow, integrated into Swift 4.2 using apple's CoreML and CoreMLTools </p>
+
                         <ul>
                             <li><a href="https://itunes.apple.com/ca/app/article-generator/id1449435768?mt=8" class="lead">Download it on the IOS App Store!</a></li>
-                            <li><a href="https://github.com/charlesyz/article-generator/" class="lead">IOS app source code</a></li>
-                            <li><a href="https://github.com/charlesyz/word-rnn/" class="lead">Neural Network source code</a></li>
+                            <li><a href="https://github.com/charlesyz/article-generator/" class="lead">  Source code and more information on my Github</a></li>
+                            <li><a href="https://github.com/charlesyz/word-rnn/" class="lead">Neural Network source code and documentation</a></li>
                         </ul>
+
+                        <div class="row">
+                        	<img src="/icons/python.png" class="col-3 col-md-2 w-100 h-100 my-auto"> 
+                        	<div class="col-4">
+	                        	<img src="/icons/swift.png" class="col w-100 my-3"> 
+	                        	<img src="/icons/keras.png" class="col w-100 mx-auto"> 
+                        	</div>
+                        	<img src="/icons/tensorflow.png" class="col-4 col-md-3 w-100 h-100"> 
+                        	<img src="/icons/coreml.png" class="col-3 col-md-3 w-100 h-100"> 
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -210,9 +261,16 @@
             <div class="col">
               <p class="lead">  Over the 2018 March Break, I creating a machine learning AI in Python that plays Tetris. </p>
               <p class="lead"> The Tetris AI uses a three layer neural network with 200 input neurons (each tile of the 20x10 game grid), 24 hidden neurons, and 4 output neurons (rotate, move left, move right, do nothing). To improve, the AI uses a genetic algorithm evolution system with a roulette selection system. </p>
+              <p class="lead"> Trained using AWS and Docker</p>
               <ul>
                   <li><a href="https://github.com/charlesyz/Tetris-Ai/" class="lead">Source Code and more info is on my Github</a></li>
               </ul>
+
+              <div class="row justify-content-center">
+                <img src="/icons/python.png" class="col-3 col-md-2 w-100 h-100 my-auto"> 
+                <img src="/icons/aws.png" class="col-4 col-md-3 w-100 h-100"> 
+                <img src="/icons/docker.png" class="col-3 col-md-3 w-100 h-100"> 
+            </div>
             </div>
           </div>
           <div class="modal-footer">
@@ -241,7 +299,14 @@
                   <li><a href="https://itunes.apple.com/ca/app/ez-jigsaw-ad-free/id1290545403" class="lead">Download the app now!</a></li> 
                   <li><a href="https://github.com/charlesyz/Ez-Jigsaw" class="lead">Source Code and more documentation is on my Github</a></li>
               </ul>
-              <p class="lead"> EzJigsaw was my second app and a big milestone for me as a developing programmer. After independently learning the Swift programming language in two weeks,  I spent four months in the summer of grade 11 creating the app. After a lot of hard work and determination, my efforts were rewarded. On October the third, 2017, EzJigsaw was released onto the IOS App store. Over 200 people downloaded it on the first day. Since then, users from Russia to Japan have download it to enjoy fun and relaxing jigsaw puzzles. </p>
+
+              <div class="row justify-content-center">
+                <img src="/icons/swift.png" class="col-4 col-md-3 w-100 h-100 my-auto"> 
+                <img src="/icons/itunes-logo.png" class="col-4 col-md-3 w-100 h-100"> 
+              </div>
+<!--              
+            <p class="lead"> EzJigsaw was my second app and a big milestone for me as a developing programmer. After independently learning the Swift programming language in two weeks,  I spent four months in the summer of grade 11 creating the app. After a lot of hard work and determination, my efforts were rewarded. On October the third, 2017, EzJigsaw was released onto the IOS App store. Over 200 people downloaded it on the first day. Since then, users from Russia to Japan have download it to enjoy fun and relaxing jigsaw puzzles. </p>
+-->
             </div>
           </div>
           <div class="modal-footer">
@@ -272,6 +337,9 @@
                   <li><a href="https://charlesyz.github.io/pdfs/mazebot.pdf" class="lead">Documentation and Wiring diagrams</a></li>
                 </ul>
             </div>
+            <div class="row justify-content-center">
+                <img src="/icons/arduino.png" class="col-4 col-md-3 w-100 h-100 my-auto"> 
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -295,7 +363,7 @@
             </div>
             <div class="col">
                 <p class="lead">TapeMeasure is an android app where users can use their phone to mimic a real tape measure. The app uses the built-in accelerometer to track your phone's movement. Simply slide your phone across a smooth surface, and the app will tell you how long far you've moved! </p>
-                <p class="lead">Unfortunately, due to technology limitatues (in the iPhone 5 at the time) with the accuracy of the accelerometer and noisy data, the App was not published. The best accuracy I could achieve was about +-5%, even with calibrations and noise-reduction.</p>
+                <p class="lead">Unfortunately, due to technology limitations with the accuracy of the accelerometer and noisy data, the App was not published. The best accuracy I could achieve was about +-5%, even with calibrations and noise-reduction.</p>
                 <p class="lead">In IOS12, Apple implemented a similar measuring app called Measure. Instead of using the accelerometer, It uses the camera to produce distances in real time. Some day I hope to try my accelerometer concept using the new hardware in iPhone X+</p>
               <ul>
                   <li><a href="https://github.com/charlesyz/TapeMeasure" class="lead">Source Code is on my Github</a></li>
